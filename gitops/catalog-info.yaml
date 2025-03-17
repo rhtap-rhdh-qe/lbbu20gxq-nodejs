@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: lbbu20gxq-nodejs-gitops
+  description: This is GitOps manifest for lbbu20gxq-nodejs   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: rhtap/gitops=lbbu20gxq-nodejs
+    backstage.io/kubernetes-id: lbbu20gxq-nodejs 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: lbbu20gxq-nodejs   
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:lbbu20gxq-nodejs

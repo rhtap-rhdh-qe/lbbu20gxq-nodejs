@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: lbbu20gxq-nodejs-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/lbbu20gxq-nodejs
